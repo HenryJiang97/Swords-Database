@@ -1,0 +1,51 @@
+<center><h1>Sword Dictionary</h1></center>
+
+
+<form method="POST" action="/add">
+    <p>Add instances to database</p>
+    <input type="text" name="password" placeholder="Enter Password">
+    <button>Add</button>
+</form>
+
+<form method="POST" action="/delete">
+    <p>Delete instances from database</p>
+    <input type="text" name="password" placeholder="Enter Password">
+    <button>Delete</button>
+</form>
+
+<form method="POST" action="/update">
+    <p>Update instances from database</p>
+    <input type="text" name="password" placeholder="Enter Password">
+    <button>Update</button>
+</form>
+
+<center><h2>There are <strong><%=data%></strong> swords in the database</h2></center>
+
+
+<form method="POST" action="/all_data">
+    <center><p>Display all data in the database</p></center>
+    <center><button>Display</button></center>
+</form>
+
+
+<p>Search for swords in the database by entering key words:</p>
+
+<form method="POST" action="/search_result">
+    <input type="text" name="currentlocation" class="form" placeholder="Search by current location" style="width:200px">
+
+    <input type="text" name="typologyid" class="form" placeholder="Search by typology id" style="width:200px">
+
+    <input type="text" name="countryofass" class="form" placeholder="Search by country of assembly" style="width:200px">
+
+    <input type="text" name="scabbard" class="form" placeholder="Search by scabbard" style="width:200px">
+    
+    <button>Search</button>
+</form>
+
+
+<p>Search for swords in the database by selecting the desired features:</p>
+
+<form method="POST" action="/adsearch">
+    <button>Advanced Search</button>
+    
+</form>

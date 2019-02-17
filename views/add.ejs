@@ -1,0 +1,103 @@
+<%if(sign == 1){%>
+    <h3>Wrong Password!!!</h3>
+<%}else{%>
+    <center><h1>Add instances to database</h1></center>
+
+    <center><h2>There are <strong><%=data%></strong> swords now in the database</h2></center>
+
+    <lable>*Tips: Do not leave any blank in the form except yearmade, if there's no value for a certain attribute, put 'Unknown' for material and country, 'NULL' for others.</lable>
+
+    <br>
+    <br>
+
+    <form method="POST" action="/added">
+        <lable>Sword Values:</lable>
+        
+        <br>
+        
+        <input type="text" name="SID" class="form" placeholder="Enter SID" style="width:100px">
+        
+        <input type="text" name="currentlocation" class="form" placeholder="Enter current location" style="width:120px">
+
+        <input type="text" name="typologyid" class="form" placeholder="Enter typology id" style="width:120px">
+
+        <input type="text" name="countryofass" class="form" placeholder="Enter country of assembly" style="width:120px">
+
+        <input type="text" name="scabbard" class="form" placeholder="Enter scabbard" style="width:120px">
+    
+
+        
+        <!--<lable>Select a generality for blade:</lable>-->
+        <!--<select name="gene_b">-->
+        <!--    <option value="NULL">--Blade--</option>-->
+        <!--    <option value="long">Long</option>-->
+        <!--    <option value="pata">Pata</option>-->
+        <!--    <option value="katana">Katana</option>-->
+        <!--    <option value="rapier">Rapier</option>-->
+        <!--</select>-->
+    
+        <!--<lable>Select a generality for hilt:</lable>-->
+        <!--<select name="gene_h">-->
+        <!--    <option value="NULL">--Hilt--</option>-->
+        <!--    <option value="long">Long</option>-->
+        <!--    <option value="pata">Pata</option>-->
+        <!--    <option value="katana">Katana</option>-->
+        <!--    <option value="rapier">Rapier</option>-->
+        <!--</select>-->
+        
+        
+        <br>
+        <br>
+        
+        <lable>Blade Values:</lable>
+        <br>
+        
+        <input type="text" name="tangtype" class="form" placeholder="Tang Type" style="width:120px">
+        <input type="text" name="l" class="form" placeholder="Length" style="width:120px">
+        <input type="text" name="maxwidth" class="form" placeholder="Max Width" style="width:120px">
+        <input type="text" name="type" class="form" placeholder="Type" style="width:120px">
+        <input type="text" name="countryoforigin" class="form" placeholder="Country Of Origin" style="width:120px">
+        <input type="text" name="yearmade_blade" class="form" placeholder="Year Made" style="width:120px">
+        <input type="text" name="material_blade" class="form" placeholder="Material" style="width:120px">
+        <input type="text" name="smith" class="form" placeholder="Smith" style="width:120px">
+        
+        <br>
+        <br>
+        <lable>Hilt Values:</lable>
+        <br>
+        
+        <input type="text" name="yearmade_hilt" class="form" placeholder="Year Made" style="width:120px">
+        <input type="text" name="handlematerial" class="form" placeholder="Handle Material" style="width:120px">
+        <input type="text" name="handedness" class="form" placeholder="Handedness" style="width:120px">
+        
+        <br>
+        <br>
+        <lable>Guard Values:</lable>
+        <br>
+        
+        <input type="text" name="guardtype" class="form" placeholder="Guard Type" style="width:120px">
+        <input type="text" name="material_guard" class="form" placeholder="Material" style="width:120px">
+        
+        <br>
+        <br>
+        <lable>Pommel Values:</lable>
+        <br>
+        
+        <input type="text" name="pommeltype" class="form" placeholder="Pommel Type" style="width:120px">
+        <input type="text" name="attatchementmethod" class="form" placeholder="Attatchement Method" style="width:120px">
+        <input type="text" name="material_pommel" class="form" placeholder="Material" style="width:120px">
+        
+        <br>
+        <br>
+        <button>Add</button>
+        
+    </form>
+    
+    
+    <!--Button to display all data-->
+    <form method="POST" action="/all_data">
+        <center><button>Display All Data</button></center>
+    </form>
+
+    
+<%}%>

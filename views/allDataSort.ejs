@@ -1,0 +1,86 @@
+<center><h1>Data Sorted By <%=attri%></h1></center>
+
+<!-- Table -->
+	<table border=1>
+		<thead>
+			<tr>
+				<!-- Table header (Attributes) -->
+				<th>ID:</th>
+				<th></th>
+				<th>Sword:</th>
+				<th>Current Location</th>
+				<th>Typology ID</th>
+				<th>Country Of Assembly</th>
+				<th>Scabbard</th>
+				<th></th>
+				<th>Blade:</th>
+				<th>Tang Type</th>
+				<th>Length(cm)</th>
+				<th>Max Width(cm)</th>
+				<th>Type</th>
+				<th>Country of Origin</th>
+				<th>Year Made</th>
+				<th>Material</th>
+				<th>Smith</th>
+				<th></th>
+				<th>Hilt:</th>
+				<th>Year Made</th>
+				<th>Handle Material</th>
+				<th>Handedness</th>
+				<th></th>
+				<th>Guard:</th>
+				<th>Guard Type</th>
+				<th>Material</th>
+				<th></th>
+				<th>Pommel</th>
+				<th>Pommel Type</th>
+				<th>Attatchement Method</th>
+				<th>Material</th>
+			</tr>
+		</thead>
+		
+
+		<tbody>
+		    
+		    <%for(var i = 0; i < loop; i++){ %>
+			
+			<tr>
+			<!-- Table elements -->
+				<td style="text-align:center"><%=SID[i]%></td>
+				<td></td>
+				<td></td>
+				<td style="text-align:center"><%=CurrentLocation[i]%></td>
+				<td style="text-align:center"><%=TypologyID[i]%></td>
+				<td style="text-align:center"><%=CountryOfAssembly[i]%></td>
+				<td style="text-align:center"><%=Scabbard[i]%></td>
+				<td></td>
+				<td></td>
+				<td style="text-align:center"><%=TangType[i]%></td>
+				<td style="text-align:center"><%=Length[i]%></td>
+				<td style="text-align:center"><%=MaxWidth[i]%></td>
+				<td style="text-align:center"><%=Type[i]%></td>
+				<td style="text-align:center"><%=CountryOfOrigin[i]%></td>
+				<td style="text-align:center"><%=YearMade_blade[i]%></td>
+				<td style="text-align:center"><%=Material_blade[i]%></td>
+				<td style="text-align:center"><%=Smith[i]%></td>
+				<td></td>
+				<td></td>
+				<td style="text-align:center"><%=YearMade_hilt[i]%></td>
+				<td style="text-align:center"><%=HandleMaterial[i]%></td>
+				<td style="text-align:center"><%=Handedness[i]%></td>
+				<td></td>
+				<td></td>
+				<td style="text-align:center"><%=GuardType[i]%></td>
+				<td style="text-align:center"><%=Material_guard[i]%></td>
+				<td></td>
+				<td></td>
+				<td style="text-align:center"><%=PommelType[i]%></td>
+				<td style="text-align:center"><%=AttatchementMethod[i]%></td>
+				<td style="text-align:center"><%=Material_pommel[i]%></td>
+			</tr>
+			
+			<% } %>
+		
+		</tbody>
+		
+	</table>

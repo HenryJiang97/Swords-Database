@@ -1,0 +1,189 @@
+<center><h1>Advanced Search</h1></center>
+
+
+<form method="POST" action="/adsearch_result">
+    
+    <!--Blade features-->
+    <label>Blade Features:</label>
+    <br>
+    
+    <select name = "Length">
+        <option value="NULL">--Length--</option>
+        
+        <option value="0-30">0~30cm</option>
+        <option value="30-60">30~60cm</option>
+        <option value="60-90">60~90cm</option>
+        <option value="90-120">90~120cm</option>
+        <option value="120+">120+cm</option>
+        
+    </select>
+    
+    
+    <select name = "MaxWidth">
+        <option value="NULL">--Max Width--</option>
+        
+        <option value="0-1">0~1cm</option>
+        <option value="1-2">1~2cm</option>
+        <option value="2-3">2~3cm</option>
+        <option value="3-4">3~4cm</option>
+        <option value="4-5">4~5cm</option>
+        <option value="5+">5+cm</option>
+        
+    </select>
+    
+    
+    <select name = "TangType">
+        <option value="NULL">--Tang Type--</option>
+        
+        <%for(var i = 0; i < loop_tangtype; i++){%>
+        
+            <option value="<%=TangType[i]%>"><%=TangType[i]%></option>
+    
+        <%}%>
+    </select>
+    
+    
+    <select name = "Type">
+        <option value="NULL">--Type--</option>
+        
+        <%for(var i = 0; i < loop_type; i++){%>
+        
+            <option value="<%=Type[i]%>"><%=Type[i]%></option>
+    
+        <%}%>
+    </select>
+    
+    
+    <select name = "CountryOfOrigin">
+        <option value="NULL">--Country Of Origin--</option>
+        
+        <%for(var i = 0; i < loop_countryoforigin; i++){%>
+        
+            <option value="<%=CountryOfOrigin[i]%>"><%=CountryOfOrigin[i]%></option>
+    
+        <%}%>
+    </select>
+    
+    
+    <select name = "YearMade">
+        <option value="NULL">--Year Made--</option>
+        
+        <option value="BC">BC</option>
+        <option value="0-500">0-500</option>
+        <option value="500-1000">500-1000</option>
+        <option value="1000-1500">1000-1500</option>
+        <option value="1500+">1500+</option>
+        
+    </select>
+    
+    
+    <select name = "Material_blade">
+        <option value="NULL">--Material--</option>
+        
+        <%for(var i = 0; i < loop_material_blade; i++){%>
+        
+            <option value="<%=Material_blade[i]%>"><%=Material_blade[i]%></option>
+    
+        <%}%>
+        
+    </select>
+    
+    <br>
+    
+    
+    <!--Hilt features-->
+    <label>Blade Features:</label>
+    <br>
+    
+
+    
+    <select name = "HandleMaterial">
+        <option value="NULL">--Handle Material--</option>
+        
+        <%for(var i = 0; i < loop_handlematerial; i++){%>
+        
+            <option value="<%=HandleMaterial[i]%>"><%=HandleMaterial[i]%></option>
+    
+        <%}%>
+    </select>
+    
+    
+    <select name = "Handedness">
+        <option value="NULL">--Handedness--</option>
+        
+        <%for(var i = 0; i < loop_handedness; i++){%>
+        
+            <option value="<%=Handedness[i]%>"><%=Handedness[i]%></option>
+    
+        <%}%>
+    </select>
+    
+    <br>
+    
+    <!--Guard features-->
+    <label>Guard Features:</label>
+    <br>
+    
+    <select name = "GuardType">
+        <option value="NULL">--Guard Type--</option>
+        
+        <%for(var i = 0; i < loop_guardtype; i++){%>
+        
+            <option value="<%=GuardType[i]%>"><%=GuardType[i]%></option>
+    
+        <%}%>
+    </select>
+    
+    <select name = "Material_guard">
+        <option value="NULL">--Material--</option>
+        
+        <%for(var i = 0; i < loop_material_guard; i++){%>
+        
+            <option value="<%=Material_guard[i]%>"><%=Material_guard[i]%></option>
+    
+        <%}%>
+    </select>
+    
+    <br>
+    
+    <!--Pommel features-->
+    <label>Pommel Features:</label>
+    <br>
+    
+    <select name = "PommelType">
+        <option value="NULL">--Pommel Type--</option>
+        
+        <%for(var i = 0; i < loop_pommeltype; i++){%>
+        
+            <option value="<%=PommelType[i]%>"><%=PommelType[i]%></option>
+    
+        <%}%>
+    </select>
+    
+    <select name = "AttatchementMethod">
+        <option value="NULL">--Attatchement Method--</option>
+        
+        <%for(var i = 0; i < loop_attatchementmethod; i++){%>
+        
+            <option value="<%=AttatchementMethod[i]%>"><%=AttatchementMethod[i]%></option>
+    
+        <%}%>
+    </select>
+    
+    <select name = "Material_pommel">
+        <option value="NULL">--Material--</option>
+        
+        <%for(var i = 0; i < loop_material_pommel; i++){%>
+        
+            <option value="<%=Material_pommel[i]%>"><%=Material_pommel[i]%></option>
+    
+        <%}%>
+    </select>
+    
+    
+    <br>
+    
+    <center><button>Search</button></center>
+    
+    
+</form>

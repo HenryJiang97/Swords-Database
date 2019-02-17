@@ -1,0 +1,22 @@
+<%if(sign == 1){%>
+    <h3>Wrong Password!!!</h3>
+<%}else{%>
+    <center><h1>Delete instances from database</h1></center>
+    
+    <center><h2>There are <strong><%=data%></strong> swords now in the database</h2></center>
+    
+    
+    <!--Button to display all data-->
+    <form method="POST" action="all_data">
+        <center><button>Display All Data</button></center>
+    </form>
+    
+    
+    <!--Delete action-->
+    <h5>Input the ID of the sword you prefer to delete:</h5>
+    <form method="POST" action="/deleted">
+        <input type="text" name="SID_delete" class="form" placeholder="Enter ID" style="width:100px">
+        <button>Delete</button>
+    </form>
+    
+<%}%>

@@ -1,0 +1,54 @@
+<%if(sign == 1){%>
+    <h3>Wrong Password!!!</h3>
+<%}else{%>
+    <center><h1>Update instances from database</h1></center>
+    
+    <center><h2>There are <strong><%=data%></strong> swords now in the database</h2></center>
+    
+    
+    <!--Button to display all data-->
+    <form method="POST" action="all_data">
+        <center><button>Display All Data</button></center>
+    </form>
+    
+    
+    <!--Update action-->
+    <h5>Input the ID of the sword you prefer to update and select the attribute you wanna to update:</h5>
+    <form method="POST" action="/updated">
+        <input type="text" name="ID_update" class="form" placeholder="Enter ID" style="width:100px">
+        <select name="attri_update">
+            <option value="NULL">--Sword Attributes--</option>
+            <option value="CurrentLocation">Current Location</option>
+            <option value="TypologyID">Typology ID</option>
+            <option value="CountryOfAssembly">Country Of Assembly</option>
+            <option value="Scabbard">Scabbard</option>
+            <option value="NULL"></option>
+            <option value="NULL">--Blade Attributes--</option>
+            <option value="TangType">Tang Type</option>
+            <option value="Length">Length</option>
+            <option value="MaxWidth">Max Width</option>
+            <option value="Type">Type</option>
+            <option value="CountryOfOrigin">Country Of Origin</option>
+            <option value="YearMade_blade">Year Made</option>
+            <option value="Material_blade">Material</option>
+            <option value="Smith">Smith</option>
+            <option value="NULL"></option>
+            <option value="NULL">--Hilt Attributes--</option>
+            <option value="YearMade_hilt">Year Made</option>
+            <option value="HandleMaterial">Handle Material</option>
+            <option value="Handedness">Handedness</option>
+            <option value="NULL"></option>
+            <option value="NULL">--Guard Attributes--</option>
+            <option value="GuardType">Guard Type</option>
+            <option value="Material_guard">Material</option>
+            <option value="NULL"></option>
+            <option value="NULL">--Pommel Attributes--</option>
+            <option value="PommelType">Pommel Type</option>
+            <option value="AttatchementMethod">Attatchement Method</option>
+            <option value="Material_pommel">Material</option>
+        </select>
+        <input type="text" name="update" placeholder="Updated value">
+        <button>Update</button>
+    </form>
+    
+<%}%>
