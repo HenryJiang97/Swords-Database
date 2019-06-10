@@ -1,20 +1,32 @@
-<center><h1>Sword Dictionary</h1></center>
+<html>
 
+<head>
+    <title>Home</title>
+    
+    <link rel = "stylesheet" type = "text/css" href = "/sword/JoinUs/views/home.css">
+</head>
+
+
+
+<body style = "background-color: rgb(191,208,250)">
+
+<center><h1 style = "font-size: 48px">Sword Dictionary</h1></center>
+<center><img width = "150" src="https://www.coldsteel.com/media/catalog/product/cache/1/thumbnail/480x/17f82f742ffe127f42dca9de82fb58b1/8/8/88wgs.jpg"></center>
 
 <form method="POST" action="/add">
-    <p>Add instances to database</p>
+    <p style = "font-size: 18px">Add instances to database</p>
     <input type="text" name="password" placeholder="Enter Password">
     <button>Add</button>
 </form>
 
 <form method="POST" action="/delete">
-    <p>Delete instances from database</p>
+    <p style = "font-size: 18px">Delete instances from database</p>
     <input type="text" name="password" placeholder="Enter Password">
     <button>Delete</button>
 </form>
 
 <form method="POST" action="/update">
-    <p>Update instances from database</p>
+    <p style = "font-size: 18px">Update instances from database</p>
     <input type="text" name="password" placeholder="Enter Password">
     <button>Update</button>
 </form>
@@ -28,7 +40,7 @@
 </form>
 
 
-<p>Search for swords in the database by entering key words:</p>
+<p style = "font-size: 20px">Search for swords in the database by entering key words:</p>
 
 <form method="POST" action="/search_result">
     <input type="text" name="currentlocation" class="form" placeholder="Search by current location" style="width:200px">
@@ -43,9 +55,13 @@
 </form>
 
 
-<p>Search for swords in the database by selecting the desired features:</p>
+<p style = "font-size: 20px">Search for swords in the database by selecting the desired features:</p>
 
 <form method="POST" action="/adsearch">
     <button>Advanced Search</button>
     
 </form>
+
+</body>
+
+</html>
